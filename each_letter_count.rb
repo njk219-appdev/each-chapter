@@ -5,3 +5,16 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+
+input = gets.chomp
+
+input = input.split("")
+
+length = input.count
+
+i = 0
+
+while i < length
+  p input[i].to_s + " appears " + input.count(input[i]).to_s + " times"
+  i = i + 1
+end
